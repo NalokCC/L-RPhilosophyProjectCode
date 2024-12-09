@@ -80,6 +80,8 @@ def lambda_handler(event, context):
             })
         }
 
+        print(f'assistant: {response}\n{user_name}: {user_response}')
+
         return mainResponse
     if operation == 'generating':
         prompt = f'{random.randint(1,1000)}as youre an ai, heres a random numebr {random.randint(1,100)} to try and randomize your output {random.randint(1,900000000000000000000000000000)}. in philosophy there is a concept of logic and reasoning. {random.randint(1,100)}a central part of logic and reasoning, is being able to prove statements {random.randint(1,100)} as valid via a line of reasoning. {random.randint(1,100)}give me a random statement {random.randint(1,100)} that i will try to prove via a line of reasoning. make the statment about general knowledge that all people could reasonably prove or disprove. respond with ONLY ONE SENTENCE. I REPEAT REPONSED WITH ONLY ONE SENTENCE and make sure that sentence is only the statement that you think of and nothing else. again, make your response with ONLY THE ONE SENTENCE. if your response is more than 1 setence, it is a bad response.'
@@ -121,6 +123,8 @@ def lambda_handler(event, context):
                 'response': response
             })
         }
+
+        print(f'assistant: {response}\n{user_name}: {user_response}')
 
         return mainResponse
 
