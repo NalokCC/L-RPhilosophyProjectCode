@@ -1,14 +1,14 @@
 <form action="https://3hpd0b154h.execute-api.us-east-1.amazonaws.com/Dev/test" method="POST" target=“targetResponse”>
   <div>
     <label for="name">Name</label>
-    <input name="name" id="name" value="" />
+    <input name="name" id="name" value="" size=100% />
   </div>
   <div>
     <label for="response">Response</label>
-    <input name="response" id="response" value="" />
+    <input name="response" id="response" value="response here" size=100% />
   </div>
   <div>
-    <button>Submit Response</button>
+    <button>Submit</button>
   </div>
 </form>
 
