@@ -1,0 +1,22 @@
+<form action="https://3hpd0b154h.execute-api.us-east-1.amazonaws.com/Dev/test" method="POST" target=“targetResponse”>
+  <div>
+    <label for="name">Name</label>
+    <input name="name" id="name" value="" />
+  </div>
+  <div>
+    <label for="response">Response</label>
+    <input name="response" id="response" value="" />
+  </div>
+  <div>
+    <button>Submit Response</button>
+  </div>
+</form>
+
+<iframe
+  name = “targetResponse”
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width=100%
+  height=300
+  src="https://3hpd0b154h.execute-api.us-east-1.amazonaws.com/Dev/test">
+</iframe>
